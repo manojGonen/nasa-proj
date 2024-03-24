@@ -1,0 +1,21 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "client": "npm start --prefix Client/nasa-front-end",
+    "start": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client/nasa-front-end && npm start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.2.0",
+    "morgan": "^1.10.0"
+  }
+}
